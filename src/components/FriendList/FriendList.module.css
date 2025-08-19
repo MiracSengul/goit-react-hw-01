@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    gap:5px;
+}
+
+.profileCard{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 1rem;
+    width: 90px;
+}
