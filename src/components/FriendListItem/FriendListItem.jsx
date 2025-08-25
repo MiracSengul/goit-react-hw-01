@@ -1,13 +1,12 @@
 import css from "./FriendListItem.module.css"
 
-const FriendListItem = ({friend}) => {
-    {console.log("hi")}
+const FriendListItem = ({avatar, name, isOnline}) => {
     return(
         <>
-            <img src={friend.avatar} alt="Avatar" width="48" />
-            <p className={css.name}>{friend.name}</p>
+            <img src={avatar} alt="Avatar" width="48" />
+            <p className={css.name}>{name}</p>
             {
-                friend.isOnline ? <p style={{color:"green"}}>Online</p> : <p style={{color:"red"}}>Offline</p>
+                isOnline ? <p style={{color:"green"}}>Online</p> : <p style={{color:"red"}}>Offline</p>
             };
         </>
 
